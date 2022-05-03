@@ -1,14 +1,6 @@
 import pytest
-import argparse
-import sys
-import IP
 from IP import ip2bin4
 from IP import ip2bin6
-
-
-# def test_parser():
-#     args = IP.createParser()
-#     assert args.version == 4 or args.version == 6
 
 
 @pytest.mark.parametrize("number, result", [
