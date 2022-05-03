@@ -3,12 +3,6 @@ import sys
 import argparse
 
 
-# parser = argparse.ArgumentParser(description='This code finds the minimum subnet for a set of IP-addresses')
-# parser.add_argument('file', help='first argument is file with IP-addresses', type=argparse.FileType())
-# parser.add_argument('version', help='second argument is version of IP', type=str)
-# args = parser.parse_args()
-
-
 def createParser(args=None):
     parser = argparse.ArgumentParser(description='This code finds the minimum subnet for a set of IP-addresses')
     parser.add_argument('file', help='first argument is file with IP-addresses', type=argparse.FileType())
@@ -83,13 +77,6 @@ while type_1 <= last:
         continue
     else:
         need = type_2
-
-# while new_list[-2][type_1] == new_list[-1][type_2]:
-#     type_1 += 1
-#     type_2 += 1
-#     continue
-# else:
-#     need = type_2
 
 net = ''
 
